@@ -1,85 +1,78 @@
-//  If Then
-let number = -5;
+// Conditionals statements
+// If statement
+let number = 0;
 
-if (number > 0) {
-  console.log("The number is positive.");
+if (number > 0){
+    console.log("The number is positive")
 } else if (number < 0) {
-  console.log("The number is negative.");
+    console.log("The number is negative")
 } else {
-  console.log("The number is zero.");
+    console.log("The number is zero")
+}
+
+let grade = 20;
+
+if (grade >= 90 ) {
+    console.log("You have an A")
+} else if (grade >= 80){    
+    console.log("You have a B")
+} else if (grade >= 60){    
+    console.log("You have a C")
+} else if (grade >= 40){    
+    console.log("You have a D")
+} else {
+    console.log("You have failed")
 }
 
 
-// Switch
-let day = "Monday";
+// SWitch statement
+let day = "Wednesday"
 let message;
 
 switch (day) {
-  case "Saturday":
-  case "Sunday":
-    message = "It's the weekend!";
-    break;
-  case "Monday":
-    message = "It's the start of the work week.";
-    break;
-  default:
-    message = "It's a regular weekday.";
+    case "Sartuday":
+    case "Sunday":
+        message = "Its the weekend";
+        break;
+    case "Monday":
+        message = "Its the start of the week";
+        break;
+    default:
+        message = "Its a regular day"
+}
+console.log(message)
+
+// Loops
+
+let fruits = ["Apple", "Banana", "Citrus", "Mango", "Pineapple"]; 
+
+for (let i = 0;i < fruits.length; i++) {
+    console.log(`Fruit at index ${i} is: ${fruits[i]}`)
 }
 
-console.log(message);
-
-// Loop
-const fruits = ["Apple", "Banana", "Cherry", "Date"];
-
-for (let i = 0; i < fruits.length; i++) {
-  console.log(`Fruit at index ${i} is: ${fruits[i]}`);
+// Countdown
+for (let i = 5; i < 20; i++) {
+    console.log("The count is:" + i)
 }
 
+let students = ["Abel", "Cain", "Jacod", "Abraham", "Isaac", "Jeremiah"];
 
-//  foor
-for (let i = 10; i >= 1; i--) {
-  console.log(i);
+for (let i = 0; i < students.length; i++){
+    console.log(`The following students are in class, index number ${i} name ${students[i]}`)
 }
 
-// While
+// While loop
 let randomNumber = 0;
 
-while (randomNumber <= 0.8) {
-  randomNumber = Math.random();
-  console.log(`Current random number: ${randomNumber}`);
+while (randomNumber <= 0.8){
+    randomNumber = Math.random();
+    console.log(`Current random number: ${randomNumber}`)
 }
 
-// do... while
-let choice = 0;
+let count = 10;
 
-do {
-  console.log("\n--- Menu ---");
-  console.log("1. View Profile");
-  console.log("2. Settings");
-  console.log("3. Exit");
-  
-  // Here we'll simulate a user entering an invalid choice first.
-  if (choice === 0) {
-    choice = 5; // An invalid choice
-  } else {
-    choice = 3; // A valid choice to end the loop
-  }
-
-} while (choice < 1 || choice > 3);
-
-console.log(`\nSelected option ${choice}. Exiting menu.`);
-
-
-// break continue
-let numbers = [1, 2, 7, 8, 12, 15];
-
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] < 5) {
-    continue; // Skip numbers less than 5
-  }
-
-  if (numbers[i] > 10 && numbers[i] % 2 === 0) {
-    console.log(`Found the number: ${numbers[i]}`);
-    break; // Exit the loop as soon as the condition is met
-  }
+while (count > 0) {
+    console.log(count);
+    count--;
 }
+console.log("Blast Off")
