@@ -76,3 +76,12 @@ while (count > 0) {
     count--;
 }
 console.log("Blast Off")
+
+
+// Do while 
+let i = 1;
+
+do {
+    console.log("The current number is:" + i);
+    i += 2 ;
+} while (i <= 5)

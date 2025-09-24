@@ -39,7 +39,7 @@ const student = {
 console.log(student)
 
 // Array
-let fruits = ["Apple", "Banana", "Ginger", "Date", "Oranges", "Pearch", "Ovacado"];
+let fruits = ["Apple", "12", "Banana", "Ginger", "Date", "Oranges", "Pearch", "Ovacado"];
 
 let numbers = [2,5,78,3,65,34,98,54,2,43,76,788];
 
